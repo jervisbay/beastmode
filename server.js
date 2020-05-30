@@ -1,6 +1,7 @@
 var express = require("express");
 var path = require("path");
 var db = require("./models");
+const compression = require("compression");
 
 var PORT = process.env.PORT || 8080;
 
@@ -13,6 +14,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(compression());
 
 
 // Set Handlebars.

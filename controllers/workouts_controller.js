@@ -5,6 +5,9 @@ var connection = require("../config/connection");
 var cTable = require('console.table');
 const db = require("../models");
 
+const compression = require("compression");
+app.use(compression());
+
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
     res.render("index");
