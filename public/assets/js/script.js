@@ -20,6 +20,3 @@ document.write(`
         </p>
         </div>
         `);
-
-
-{ /* <h3 id="greeting">' + greeting + '</h3>'); */ }
